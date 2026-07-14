@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>DevBot Quiz</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<section class="quiz-section">
+
+<h1>DevOps Knowledge Quiz</h1>
+
+
+<div class="quiz-box">
+
+
+<h3>
+1. Which tool is used for containerization?
+</h3>
+
+
+<label>
+<input type="radio" name="q1" value="correct">
+Docker
+</label>
+
+
+<label>
+<input type="radio" name="q1">
+Git
+</label>
+
+
+<label>
+<input type="radio" name="q1">
+Linux
+</label>
+
+
+
+<h3>
+2. Which platform provides cloud services?
+</h3>
+
+
+<label>
+<input type="radio" name="q2">
+GitHub
+</label>
+
+
+<label>
+<input type="radio" name="q2" value="correct">
+AWS
+</label>
+
+
+<label>
+<input type="radio" name="q2">
+Jenkins
+</label>
+
+
+
+<h3>
+3. Git is mainly used for?
+</h3>
+
+
+<label>
+<input type="radio" name="q3" value="correct">
+Version Control
+</label>
+
+
+<label>
+<input type="radio" name="q3">
+Cloud Storage
+</label>
+
+
+<label>
+<input type="radio" name="q3">
+Operating System
+</label>
+
+
+<button onclick="checkQuiz()">
+Submit Quiz
+</button>
+
+
+<h2 id="result"></h2>
+
+
+</div>
+
+
+</section>
+
+
+
+<script>
+
+
+function checkQuiz(){
+
+
+let score = 0;
+
+
+let answers = document.querySelectorAll("input[type='radio']:checked");
+
+
+answers.forEach(answer=>{
+
+
+if(answer.value=="correct"){
+
+score++;
+
+}
+
+
+});
+
+
+document.getElementById("result").innerHTML =
+"Your Score: " + score + "/3";
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
