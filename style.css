@@ -1,0 +1,886 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(15,23,42,0.95);
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+.logo i{
+    margin-right:8px;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+
+/* ===========================
+   FEATURES
+=========================== */
+
+.features{
+    padding:100px 10%;
+    background:#111827;
+}
+
+.features h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:60px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1e293b;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:55px;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cbd5e1;
+    line-height:1.7;
+}
+
+/* ===========================
+   STATISTICS
+=========================== */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:70px 10%;
+    background:#0b1120;
+}
+
+.stat-box{
+    width:220px;
+    background:#1e293b;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+}
+
+.stat-box:hover{
+    transform:translateY(-8px);
+}
+
+.stat-box h2{
+    color:#38bdf8;
+    font-size:40px;
+}
+
+.stat-box p{
+    color:#cbd5e1;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:25px;
+    color:#94a3b8;
+}
+/* ===========================
+   MODULES SECTION
+=========================== */
+
+.modules{
+
+    padding:100px 10%;
+
+    background:#111827;
+
+}
+
+
+.modules h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:60px;
+
+}
+
+
+.module-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+
+.module-card{
+
+    background:#1e293b;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:0.3s;
+    border:1px solid rgba(56,189,248,0.2);
+
+}
+
+
+.module-card:hover{
+
+    transform:translateY(-10px) scale(1.03);
+
+    box-shadow:0 0 25px rgba(56,189,248,0.5);
+
+}
+
+
+.module-card i{
+
+    font-size:50px;
+
+    color:#38bdf8;
+
+    margin-bottom:20px;
+
+}
+
+
+.module-card h3{
+
+    margin-bottom:15px;
+
+}
+
+
+.module-card p{
+
+    color:#cbd5e1;
+
+    line-height:1.6;
+
+}
+/* ================= FOOTER SECTION ================= */
+
+.footer{
+
+    background:#020617;
+
+    padding:60px 10% 20px;
+
+}
+
+
+.footer-content{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:40px;
+
+}
+
+
+.footer-box h3{
+
+    color:#38bdf8;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+
+.footer-box p{
+
+    color:#cbd5e1;
+
+    line-height:1.6;
+
+}
+
+
+.footer-box a{
+
+    display:block;
+
+    color:#cbd5e1;
+
+    text-decoration:none;
+
+    margin-bottom:10px;
+
+}
+
+
+.footer-box a:hover{
+
+    color:#38bdf8;
+
+}
+
+
+.footer-bottom{
+
+    margin-top:40px;
+
+    padding-top:20px;
+
+    text-align:center;
+
+    border-top:1px solid #334155;
+
+    color:#94a3b8;
+
+}
+/* ================= CHATBOT SECTION ================= */
+
+.chatbot{
+
+    padding:100px 10%;
+
+    background:#0f172a;
+
+    text-align:center;
+
+}
+
+
+.chatbot h2{
+
+    font-size:42px;
+
+    margin-bottom:50px;
+
+}
+
+
+.chat-container{
+
+    max-width:700px;
+
+    margin:auto;
+
+    background:#1e293b;
+
+    padding:30px;
+
+    border-radius:20px;
+
+}
+
+
+.chat-box{
+
+    height:300px;
+
+    overflow-y:auto;
+
+    padding:20px;
+
+    background:#020617;
+
+    border-radius:15px;
+
+    text-align:left;
+
+}
+
+
+.bot-message,
+.user-message{
+
+    padding:12px 18px;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
+
+    max-width:80%;
+
+}
+
+
+.bot-message{
+
+    background:#38bdf8;
+
+    color:#020617;
+
+}
+
+
+.user-message{
+
+    background:#334155;
+
+    margin-left:auto;
+
+}
+
+
+.chat-input{
+    transition:0.3s;
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+.chat-input button:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 15px #38bdf8;
+
+}
+
+
+.chat-input input{
+
+    flex:1;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:none;
+
+}
+
+
+.chat-input button{
+
+    padding:15px 25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#38bdf8;
+
+    cursor:pointer;
+
+}
+/* ================= QUIZ SECTION ================= */
+
+.quiz-section{
+
+    min-height:100vh;
+
+    padding:100px 10%;
+
+    background:#020617;
+
+    text-align:center;
+
+}
+
+
+.quiz-section h1{
+
+    color:#38bdf8;
+
+    font-size:40px;
+
+}
+
+
+.quiz-box{
+
+    max-width:700px;
+
+    margin:40px auto;
+
+    background:#1e293b;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:left;
+
+}
+
+
+.quiz-box h3{
+
+    margin-top:25px;
+
+}
+
+
+.quiz-box label{
+
+    display:block;
+
+    margin:15px 0;
+
+    color:#cbd5e1;
+
+}
+
+
+.quiz-box button{
+
+    margin-top:30px;
+
+    padding:15px 30px;
+
+    background:#38bdf8;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+/* ================= PROGRESS SECTION ================= */
+
+
+.progress-section{
+
+    min-height:100vh;
+
+    padding:100px 10%;
+
+    background:#020617;
+
+    text-align:center;
+
+}
+
+
+.progress-section h1{
+
+    color:#38bdf8;
+
+    font-size:40px;
+
+}
+
+
+
+.progress-card{
+
+    max-width:700px;
+
+    margin:50px auto;
+
+    background:#1e293b;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:left;
+
+}
+
+
+
+.progress-card h3{
+
+    margin-top:25px;
+
+}
+
+
+
+.progress-bar{
+
+    height:25px;
+
+    background:#334155;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+.progress{
+
+    height:100%;
+
+    background:#38bdf8;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#020617;
+
+    font-weight:bold;
+
+}
+
+
+
+.linux{
+
+    width:70%;
+
+}
+
+
+.git{
+
+    width:80%;
+
+}
+
+
+.docker{
+
+    width:50%;
+
+}
+
+
+.kubernetes{
+
+    width:30%;
+
+}
+
+
+.aws{
+
+    width:40%;
+
+}
+/* ================= SCROLL ANIMATION ================= */
+
+
+.modules,
+.chatbot,
+.footer,
+.quiz-section,
+.progress-section{
+
+    animation: fadeUp 1s ease;
+
+}
+
+
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/* ================= HERO ENHANCEMENT ================= */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:50px 10%;
+
+}
+
+
+.hero-content h1{
+
+    font-size:55px;
+
+    color:#38bdf8;
+
+}
+
+
+.hero-content h2{
+
+    font-size:30px;
+
+    margin:20px 0;
+
+}
+
+
+.hero-content p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+}
+
+
+.hero-btn{
+
+    display:inline-block;
+
+    margin:30px 10px 0;
+
+    padding:15px 30px;
+
+    background:#38bdf8;
+
+    color:#020617;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+}
+
+
+.hero-btn:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 20px #38bdf8;
+
+}
+
+
+.secondary{
+
+    background:transparent;
+
+    color:#38bdf8;
+
+    border:2px solid #38bdf8;
+
+}
+/* ================= LOADER ================= */
+
+.loader{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:#020617;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+
+.loader-logo{
+
+    font-size:50px;
+
+    color:#38bdf8;
+
+    font-weight:bold;
+
+}
+
+
+.loading-text{
+
+    margin-top:20px;
+
+    color:#cbd5e1;
+
+}
+/* ================= BACK TO TOP ================= */
+
+#topBtn{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    display:none;
+
+    border:none;
+
+    outline:none;
+
+    background:#38bdf8;
+
+    color:#020617;
+
+    cursor:pointer;
+
+    padding:15px 18px;
+
+    border-radius:50%;
+
+    font-size:20px;
+
+    box-shadow:0 0 20px rgba(56,189,248,0.5);
+
+    transition:0.3s;
+
+    z-index:999;
+
+}
+
+#topBtn:hover{
+
+    transform:scale(1.1);
+
+}
+/* ================= SEARCH ================= */
+
+.search-box{
+
+    text-align:center;
+
+    margin:40px 0;
+
+}
+
+.search-box input{
+
+    width:350px;
+
+    max-width:90%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
